@@ -1,0 +1,154 @@
+<title>Apex CRM</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Apex: AI-powered CRM for recruitment agencies. نظام CRM بالذكاء الاصطناعي لوكالات التوظيف.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap">
+<style>
+/* Layout: single dark brand (black / red / silver), one column on phone, 2-3 col grids on desktop */
+:root{--bg:#0b0b0d;--bg2:#111114;--card:#151518;--line:#2b2d31;--fg:#ecedee;--mute:#a4a9b0;--acc:#e0242b;--acc2:#ff5a5a;--accbg:#2a0d0d;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:'Cairo',Tahoma,Arial,sans-serif;font-size:17px;line-height:1.75;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1080px;margin:0 auto}
+section{padding-block:56px}
+h1{font-size:clamp(34px,7vw,64px);line-height:1.2;font-weight:800;text-wrap:balance}
+h2{font-size:clamp(26px,4.5vw,38px);line-height:1.25;font-weight:800;text-wrap:balance;margin-bottom:10px}
+h3{font-size:20px;font-weight:800}
+p{color:var(--mute)}
+.eyebrow{color:var(--acc2);font-weight:600;font-size:15px;letter-spacing:.4px;margin-bottom:6px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:#0b0b0dee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)))}
+nav .in{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:10px max(16px,env(safe-area-inset-left,0px))}
+nav img{width:38px;height:38px;border-radius:9px}
+nav b{font-size:18px}
+nav .sp{flex:1}
+.btn{display:inline-block;background:var(--acc);color:#fff;border:0;border-radius:12px;padding:12px 22px;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}
+.btn.o{background:transparent;border:1px solid var(--line);color:var(--fg);font-weight:600}
+.btn.sm{padding:8px 16px;font-size:15px}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--acc2);outline-offset:3px}
+.hero{padding-block:64px 40px;display:flex;flex-direction:column;gap:20px}
+.hero p.sub{font-size:clamp(18px,2.6vw,22px);max-width:60ch;color:#c4c8cc}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 16px;font-size:15px;color:#d5d8dc}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:22px}
+.grid>*{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.hot{background:var(--accbg);border:2px solid var(--acc)}
+.step{display:flex;gap:14px;align-items:flex-start}
+.step .n{flex:none;width:38px;height:38px;border-radius:50%;background:var(--acc);display:grid;place-items:center;font-weight:800}
+.demo{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:28px;align-items:center}
+video{width:100%;border-radius:18px;border:1px solid var(--line);background:#000;display:block}
+@media(max-width:720px){.demo{grid-template-columns:1fr}video{max-width:340px;margin:0 auto}}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-top:10px}
+summary{cursor:pointer;font-weight:800}
+details p{margin-top:8px}
+.band{background:var(--bg2);border-block:1px solid var(--line);margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px))}
+footer{padding-block:36px 56px;border-top:1px solid var(--line);color:var(--mute);font-size:15px;display:flex;flex-direction:column;gap:6px}
+.note{font-size:14px;color:var(--mute)}
+</style>
+<body>
+<nav><div class="in"><img src="logo.png" alt="Apex"><b>Apex</b><span class="sp"></span>
+<button class="btn o sm" id="lang" type="button">English</button>
+<a class="btn sm" data-wa data-i="cta1" href="#contact">اطلب ديمو</a></div></nav>
+
+<div class="wrap">
+<header class="hero">
+<p class="eyebrow" data-i="eyebrow">نظام CRM لوكالات التوظيف</p>
+<h1 data-i="h1">وكالة التوظيف بتاعتك تشتغل لوحدها</h1>
+<p class="sub" data-i="sub">الكانديديت يقدّم، والـ AI يقيّم إنجليزيه بالصوت، وبياناته توصل للشيت من غير ما ريكروتر يتدخل.</p>
+<div class="row"><a class="btn" data-wa data-i="cta1" href="#contact">اطلب ديمو</a><a class="btn o" data-i="cta2" href="#demo">شوف الفيديو</a></div>
+<div class="chips"><span class="chip" data-i="c1">باسم وشعار الـ agency بتاعتك</span><span class="chip" data-i="c2">تركيب وتدريب ودعم</span><span class="chip" data-i="c3">شغال على حساباتك إنت</span></div>
+</header>
+</div>
+
+<div class="band"><div class="wrap"><section id="how">
+<p class="eyebrow" data-i="how_e">إزاي بيشتغل</p>
+<h2 data-i="how_h">من التقديم لحد الشيت في 4 خطوات</h2>
+<div class="grid">
+<div class="card step"><span class="n">1</span><div><h3 data-i="s1h">الكانديديت يقدّم</h3><p data-i="s1p">من لينك على موقع الأوفرز، ويسجّل إجابة صوتية بالإنجليزي.</p></div></div>
+<div class="card step"><span class="n">2</span><div><h3 data-i="s2h">الـ AI يقيّمه</h3><p data-i="s2p">مستوى، وطلاقة، ونطق، وجرامر، مع نصيحة تساعد الكانديديت يتحسن.</p></div></div>
+<div class="card step"><span class="n">3</span><div><h3 data-i="s3h">قرار حسب معاييرك</h3><p data-i="s3p">قبول أو مراجعة أو رفض تلقائي. والمقبول يملا بياناته بنفسه.</p></div></div>
+<div class="card step"><span class="n">4</span><div><h3 data-i="s4h">الشيت واللوحة</h3><p data-i="s4p">البيانات تروح للشيت لوحدها، وتظهر في لوحتك مع الحالة والمتابعة.</p></div></div>
+</div></section></div></div>
+
+<div class="wrap">
+<section id="features">
+<p class="eyebrow" data-i="f_e">اللي هتاخده</p>
+<h2 data-i="f_h">كل اللي الـ agency محتاجاه في نظام واحد</h2>
+<div class="grid">
+<div class="card"><h3 data-i="f1h">تقييم إنجليزي بالصوت</h3><p data-i="f1p">تقييم متسق لكل كانديديت، من غير ما حد يسمع تسجيلات واحد واحد.</p></div>
+<div class="card"><h3 data-i="f2h">لوحة المالك والفريق</h3><p data-i="f2p">أدوار جاهزة: مالك ويونيت مانجر وتيم ليدر وريكروتر، كل واحد يشوف اللي يخصه.</p></div>
+<div class="card"><h3 data-i="f3h">متابعة وcommission</h3><p data-i="f3p">حالات واضحة، ملاحظات ومتابعات، وتسجيل الـ commission لكل ريكروتر.</p></div>
+<div class="card"><h3 data-i="f4h">موقع أوفرز جاهز</h3><p data-i="f4p">موقع بالأوفرز باسمك، بيتحدث من شيت، ومعاه صفحة تقديم للكانديديت.</p></div>
+<div class="card"><h3 data-i="f5h">صفحة توظيف فريقك</h3><p data-i="f5p">ريكروترز وتيم ليدرز ويونيت مانجرز يقدموا بأسئلة مخصصة، وإشعار فوري ليك.</p></div>
+<div class="card"><h3 data-i="f6h">محتوى تسويق جاهز</h3><p data-i="f6p">فيديوهات وإعلانات وكابشنات تنشرها على تيك توك وواتساب.</p></div>
+</div></section>
+</div>
+
+<div class="band"><div class="wrap"><section id="demo">
+<p class="eyebrow" data-i="d_e">ديمو</p>
+<h2 data-i="d_h">شوف الرحلة كاملة في 75 ثانية</h2>
+<div class="demo">
+<video controls preload="metadata" poster="poster.jpg" playsinline><source src="Apex_System_Demo.mp4" type="video/mp4"></video>
+<div><p data-i="d_p">الفيديو ده عرض توضيحي ببيانات تجريبية. اطلب ديمو مباشر على بياناتك وأرقامك، ونحسب التوفير سوا.</p><br><a class="btn" data-wa data-i="cta1" href="#contact">اطلب ديمو</a></div>
+</div></section></div></div>
+
+<div class="wrap">
+<section id="packages">
+<p class="eyebrow" data-i="p_e">الباقات</p>
+<h2 data-i="p_h">باقة على قد وكالتك</h2>
+<p data-i="p_p">السعر للـ agency كلها، مش لكل مستخدم. اطلب عرض سعر حسب حجم فريقك.</p>
+<div class="grid">
+<div class="card hot"><h3 data-i="k1h">ترخيص وتركيب</h3><p data-i="k1p">نسخة كاملة باسمك، تركيب على حساباتك، تدريب للفريق، وشهر دعم. بعدها اشتراك شهري للتحديثات والدعم.</p></div>
+<div class="card"><h3 data-i="k2h">حصري لمجالك</h3><p data-i="k2p">نفس الباقة، مع ضمان إن مفيش منافس في مجالك أو منطقتك عنده نفس النظام.</p></div>
+<div class="card"><h3 data-i="k3h">نسبة من التعيينات</h3><p data-i="k3p">تركيب صغير ونسبة من إيراد التعيينات. مناسبة للوكالات الناشئة.</p></div>
+</div>
+<p class="note" style="margin-top:14px" data-i="p_n">التراخيص لاستخدام وكالتك فقط. الكود والملكية الفكرية لـ Apex.</p>
+</section>
+
+<section id="faq">
+<p class="eyebrow" data-i="q_e">أسئلة شائعة</p>
+<h2 data-i="q_h">اللي بيسألوه الأول</h2>
+<details><summary data-i="q1">محتاج خبرة تقنية؟</summary><p data-i="a1">لأ. إحنا بنركّب وندرّب فريقك، وبتبدأ تشتغل بعدها.</p></details>
+<details><summary data-i="q2">البيانات بتاعة مين؟</summary><p data-i="a2">بتاعتك. بتتخزن على حساباتك، ومبتتخلطش مع أي وكالة تانية.</p></details>
+<details><summary data-i="q3">في تكاليف تانية؟</summary><p data-i="a3">خدمات خارجية زي قاعدة البيانات والاستضافة ومفتاح الذكاء الاصطناعي والدومين. بتدفعها مباشرة لمزوديها.</p></details>
+<details><summary data-i="q4">أقدر أعدّل عليه أو أبيعه؟</summary><p data-i="a4">الترخيص لوكالتك فقط، ومينفعش بيع أو تعديل للكود. أي تعديل بتعمله Apex بمقابل متفق عليه.</p></details>
+<details><summary data-i="q5">لو وقفت الاشتراك الشهري؟</summary><p data-i="a5">النسخة المركّبة بتفضل شغالة. الاشتراك بيغطي التحديثات والدعم.</p></details>
+</section>
+</div>
+
+<div class="band"><div class="wrap"><section id="contact" style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px">
+<h2 data-i="ct_h">جاهز تشوف النظام على بياناتك؟</h2>
+<p data-i="ct_p">كلمنا على واتساب، ونحدد ميعاد ديمو.</p>
+<a class="btn" data-wa data-i="ct_b" href="#contact">كلمنا على واتساب</a>
+</section></div></div>
+
+<div class="wrap"><footer><b style="color:var(--fg)">Apex Recruitment Agency</b><span data-i="ft">نظام Apex CRM للوكالات.</span></footer></div>
+
+<script>
+/* Put the WhatsApp number in international format, digits only, e.g. "2010XXXXXXXX". Leave "" until you have it. */
+var WA_NUMBER="201115634954";
+var D={ar:{eyebrow:"نظام CRM لوكالات التوظيف",h1:"وكالة التوظيف بتاعتك تشتغل لوحدها",sub:"الكانديديت يقدّم، والـ AI يقيّم إنجليزيه بالصوت، وبياناته توصل للشيت من غير ما ريكروتر يتدخل.",cta1:"اطلب ديمو",cta2:"شوف الفيديو",c1:"باسم وشعار الـ agency بتاعتك",c2:"تركيب وتدريب ودعم",c3:"شغال على حساباتك إنت",
+how_e:"إزاي بيشتغل",how_h:"من التقديم لحد الشيت في 4 خطوات",s1h:"الكانديديت يقدّم",s1p:"من لينك على موقع الأوفرز، ويسجّل إجابة صوتية بالإنجليزي.",s2h:"الـ AI يقيّمه",s2p:"مستوى وطلاقة ونطق وجرامر، مع نصيحة تساعد الكانديديت يتحسن.",s3h:"قرار حسب معاييرك",s3p:"قبول أو مراجعة أو رفض تلقائي. والمقبول يملا بياناته بنفسه.",s4h:"الشيت واللوحة",s4p:"البيانات تروح للشيت لوحدها، وتظهر في لوحتك مع الحالة والمتابعة.",
+f_e:"اللي هتاخده",f_h:"كل اللي الـ agency محتاجاه في نظام واحد",f1h:"تقييم إنجليزي بالصوت",f1p:"تقييم متسق لكل كانديديت، من غير ما حد يسمع التسجيلات واحد واحد.",f2h:"لوحة المالك والفريق",f2p:"أدوار جاهزة: مالك ويونيت مانجر وتيم ليدر وريكروتر، وكل واحد يشوف اللي يخصه.",f3h:"متابعة وcommission",f3p:"حالات واضحة، ملاحظات ومتابعات، وتسجيل الـ commission لكل ريكروتر.",f4h:"موقع أوفرز جاهز",f4p:"موقع بالأوفرز باسمك بيتحدث من شيت، ومعاه صفحة تقديم للكانديديت.",f5h:"صفحة توظيف فريقك",f5p:"ريكروترز وتيم ليدرز ويونيت مانجرز يقدموا بأسئلة مخصصة، وإشعار فوري ليك.",f6h:"محتوى تسويق جاهز",f6p:"فيديوهات وإعلانات وكابشنات تنشرها على تيك توك وواتساب.",
+d_e:"ديمو",d_h:"شوف الرحلة كاملة في 75 ثانية",d_p:"الفيديو ده عرض توضيحي ببيانات تجريبية. اطلب ديمو مباشر على بياناتك وأرقامك، ونحسب التوفير سوا.",
+p_e:"الباقات",p_h:"باقة على قد وكالتك",p_p:"السعر للـ agency كلها، مش لكل مستخدم. اطلب عرض سعر حسب حجم فريقك.",k1h:"ترخيص وتركيب",k1p:"نسخة كاملة باسمك، تركيب على حساباتك، تدريب للفريق، وشهر دعم. بعدها اشتراك شهري للتحديثات والدعم.",k2h:"حصري لمجالك",k2p:"نفس الباقة، مع ضمان إن مفيش منافس في مجالك أو منطقتك عنده نفس النظام.",k3h:"نسبة من التعيينات",k3p:"تركيب صغير ونسبة من إيراد التعيينات. مناسبة للوكالات الناشئة.",p_n:"التراخيص لاستخدام وكالتك فقط. الكود والملكية الفكرية لـ Apex.",
+q_e:"أسئلة شائعة",q_h:"اللي بيسألوه الأول",q1:"محتاج خبرة تقنية؟",a1:"لأ. إحنا بنركّب وندرّب فريقك، وبتبدأ تشتغل بعدها.",q2:"البيانات بتاعة مين؟",a2:"بتاعتك. بتتخزن على حساباتك، ومبتتخلطش مع أي وكالة تانية.",q3:"في تكاليف تانية؟",a3:"خدمات خارجية زي قاعدة البيانات والاستضافة ومفتاح الذكاء الاصطناعي والدومين. بتدفعها مباشرة لمزوديها.",q4:"أقدر أعدّل عليه أو أبيعه؟",a4:"الترخيص لوكالتك فقط، ومينفعش بيع أو تعديل للكود. أي تعديل بتعمله Apex بمقابل متفق عليه.",q5:"لو وقفت الاشتراك الشهري؟",a5:"النسخة المركّبة بتفضل شغالة. الاشتراك بيغطي التحديثات والدعم.",
+ct_h:"جاهز تشوف النظام على بياناتك؟",ct_p:"كلمنا على واتساب، ونحدد ميعاد ديمو.",ct_b:"كلمنا على واتساب",ft:"نظام Apex CRM للوكالات.",wa:"أهلاً، عايز ديمو لنظام Apex CRM",lbl:"English"},
+en:{eyebrow:"CRM for recruitment agencies",h1:"A recruitment agency that runs itself",sub:"Candidates apply, AI scores their spoken English, and their data lands in your sheet with no recruiter involved.",cta1:"Book a demo",cta2:"Watch the video",c1:"Your agency's name and logo",c2:"Setup, training and support",c3:"Runs on your own accounts",
+how_e:"How it works",how_h:"From application to sheet in 4 steps",s1h:"Candidate applies",s1p:"From a link on your offers site, with a short spoken answer in English.",s2h:"AI scores them",s2p:"Level, fluency, pronunciation and grammar, with a tip to help the candidate improve.",s3h:"Decision by your rules",s3p:"Automatic accept, review or reject. Accepted candidates fill in their own data.",s4h:"Sheet and dashboard",s4p:"Data goes to your sheet by itself and shows in your dashboard with status and follow-ups.",
+f_e:"What you get",f_h:"Everything an agency needs in one system",f1h:"Spoken English scoring",f1p:"Consistent scoring for every candidate, without anyone listening to recordings one by one.",f2h:"Owner and team dashboard",f2p:"Ready roles: owner, unit manager, team leader and recruiter, each seeing only what applies to them.",f3h:"Follow-up and commission",f3p:"Clear statuses, notes and follow-ups, and commission tracked per recruiter.",f4h:"Ready offers website",f4p:"An offers site under your name, updated from a sheet, with an application page for candidates.",f5h:"Team hiring page",f5p:"Recruiters, team leaders and unit managers apply with role-specific questions, and you get an instant alert.",f6h:"Ready marketing content",f6p:"Videos, ads and captions to post on TikTok and WhatsApp.",
+d_e:"Demo",d_h:"See the full journey in 75 seconds",d_p:"This video is an illustration with sample data. Book a live demo on your own data and numbers, and we will work out the savings together.",
+p_e:"Packages",p_h:"A package that fits your agency",p_p:"One price for the whole agency, not per user. Ask for a quote based on your team size.",k1h:"License and setup",k1p:"A full copy under your name, setup on your accounts, team training and one month of support. Then a monthly subscription for updates and support.",k2h:"Exclusive to your field",k2p:"The same package, with a guarantee that no competitor in your field or area gets the same system.",k3h:"Share of placements",k3p:"A small setup fee plus a share of placement revenue. Suited to newer agencies.",p_n:"Licenses are for your own agency only. The code and intellectual property belong to Apex.",
+q_e:"FAQ",q_h:"What people ask first",q1:"Do I need technical skills?",a1:"No. We set it up and train your team, then you start working.",q2:"Whose data is it?",a2:"Yours. It is stored on your accounts and never mixed with any other agency.",q3:"Are there other costs?",a3:"Outside services such as the database, hosting, the AI key and the domain. You pay those providers directly.",q4:"Can I modify or resell it?",a4:"The license is for your agency only, with no resale or code changes. Any change is done by Apex for an agreed fee.",q5:"What if I stop the monthly subscription?",a5:"The installed copy keeps running. The subscription covers updates and support.",
+ct_h:"Ready to see it on your own data?",ct_p:"Message us on WhatsApp and we will set a demo time.",ct_b:"Message us on WhatsApp",ft:"Apex CRM for agencies.",wa:"Hi, I would like a demo of Apex CRM",lbl:"العربية"}};
+function setLang(l){var d=D[l];document.documentElement.lang=l;document.body.dir=l==="ar"?"rtl":"ltr";
+document.querySelectorAll("[data-i]").forEach(function(n){var k=n.getAttribute("data-i");if(d[k])n.textContent=d[k]});
+document.getElementById("lang").textContent=d.lbl;
+var href=WA_NUMBER?"https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(d.wa):"#contact";
+document.querySelectorAll("[data-wa]").forEach(function(a){a.setAttribute("href",href);if(WA_NUMBER){a.setAttribute("target","_blank");a.setAttribute("rel","noopener")}});
+try{localStorage.setItem("apexLang",l)}catch(e){}}
+var L="ar";try{L=localStorage.getItem("apexLang")||"ar"}catch(e){}
+document.getElementById("lang").onclick=function(){setLang(document.documentElement.lang==="ar"?"en":"ar")};
+setLang(L==="en"?"en":"ar");
+</script>
+</body>
